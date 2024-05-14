@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="get-started.css">
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
+    <title>Get Started | Shoes to Go</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <img src="img/logo.jpg">
+        <p>Welcome to <span>shoes to go</span></p>
+        <p>
+            Your ultimate online destination for 
+            stylish and comfortable footwear! 
+            Whether you're searching for the latest 
+            trends, classic staples, or performance-
+            driven athletic shoes, our extensive collection.
+            Enjoy hassle-free shopping with secure payment 
+            options, fast shipping, and a flexible return policy.
+        </p>
+        <a href="login-page.html">
+            <button>Get Started</button>
+        </a>
+
+    </div>
+
+    <div class="loader"></div>
+
+    <script>
+        window.addEventListener("load", () => {
+            const loader = document.querySelector(".loader");
+
+            loader.classList.add("loader--hidden");
+            
+            loader.addEventListener("transitionend", () => {
+                document.body.removeChild(loader);
+            });
+        });
+    </script>
+
+</body>
+</html>

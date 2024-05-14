@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login-page.css">
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/9db1bfe32c.js" crossorigin="anonymous"></script>
+    <title>Log In | Shoes to Go</title>
+</head>
+<body>
+
+    <div class="logo-container">
+
+        <img src="img/logo.jpg">
+        <p>Log in to your account.</p>
+
+    </div>
+
+    <form class="login-form">
+
+        <div class="input-container">
+            <div class="profile-logo"> <i class="fa-solid fa-user"></i> </div>
+            <input type="email" id="login_email" name="email" placeholder="Email">
+        </div>
+
+        <div id="login-email-error" class="error-message"></div>
+
+        <div class="input-container">
+            <div class="profile-logo"> <i class="fa-solid fa-lock"></i> </div>
+            <input type="password" id="login_password" name="password" placeholder="Password">
+        </div>
+
+        <div id="login-password-error" class="error-message"></div>
+
+        <button type="submit" id="login_button">Log In</button>
+
+    </form>
+
+    <div class="loader"></div>
+
+    <script src="loadingAnimation.js"></script>
+    <script src="loginValidation.js"></script>
+    
+</body>
+</html>

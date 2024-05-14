@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(233, 224, 224);
+}
+
+header {
+    background-color: orange;
+    color: white;
+    display: flex;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo-container {
+    height: 45px;
+    width: fit-content;
+    margin: 13px 620px 0 60px;
+    display: flex;
+}
+
+.logo-container img {
+    height: 45px;
+    width: 45px;
+    margin: 0 12px 0 0;
+}
+
+.logo-container h2 {
+    font-family: "Permanent Marker", sans-serif;
+    margin: 5px 0 0 0;
+}
+
+.nav-links {
+    height: fit-content;
+    margin: 25px 0;
+    font-size: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-weight: 900;
+    color: white;
+    margin: 0 25px 0 0;
+    transition: .2s ease;
+}
+
+.nav-links i {
+    margin: 0 8px 0 0;
+}
+
+.nav-links a:nth-child(2) {
+    color: rgb(27, 91, 218);
+}
+
+.nav-links a:nth-child(3) {
+    cursor: pointer;
+}
+
+.nav-links a:hover {
+    color: rgb(27, 91, 218);
+    transition: .2s ease;
+}
+
+:root{
+    --main-color: #fd4646;
+    --sec-color: #4946fd;
+    --text-color: #171427;
+    --bg-color: #fff;
+}
+
+.container{
+    max-width: 2000px;
+    margin: auto;
+    width: 80%;
+}
+
+section{
+    padding: 4rem 0 3rem;
+}
+
+img{
+    width: 100%;
+}
+
+/* SHOP SECTION  */
+.shop{
+    margin-top: 100px;
+}
+.section-title{
+    font-style: 1.5rem;
+    font-family: "Permanent Marker", sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.shop-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    gap: 1.5rem;
+}
+.product-box{
+    position: relative;
+    text-align: center;
+}
+.product-box:hover{
+    padding: 10px;
+    transition: .4s;
+}
+
+.product-img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    margin-bottom: .5rem;
+    border-radius: 100%;
+}
+
+.product-title{
+    font-size: 1.1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+}
+.product-price{
+    font-weight: 500;
+}
+.add-cart{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    padding: 10px;
+    cursor: pointer;
+}
+.add-cart:hover{
+    background-color: yellow;
+    color: black;
+}
+
+.logo-link {
+    margin: 20px 78px;
+}
+
+.logo-link img {
+    height: 60px;
+    width: 60px;
+}
+
+/* Footer */
+
+footer {
+    height: 30px;
+    background-color: #009578;
+    margin-top: 200px;
+    padding-top: 20px;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+}
+
+/* Scroll Bar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* loading animation */
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333333;
+    transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: #009578;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+    from {
+      transform: rotate(0turn);
+    }
+    to {
+      transform: rotate(1turn);
+    }
+}

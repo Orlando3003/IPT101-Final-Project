@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-image: url(img/bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo-container {
+    height: 100px;
+    width: 500px;
+    margin: 80px 800px 50px;
+    display: flex;
+}
+
+.logo-container img {
+    height: 100px;
+    width: 100px;
+}
+
+.logo-container p {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Permanent Marker", sans-serif;
+    margin: 30px 18px;
+}
+
+.login-form {
+    height: 270px;
+    width: 350px;
+    margin: 0 850px;
+    border-radius: 13px;
+    box-shadow: 0 0 15px rgb(56, 54, 54);
+    background-color: orange;
+    padding: 50px 20px 0;
+}
+
+input {
+    height: 40px;
+    width: 260px;
+    border-radius: 0 20px 20px 0;
+    border: none;
+    text-indent: 13px;
+    font-size: 16px;
+    background-color: rgb(63, 56, 56);
+    color: white;
+    transition: ease .2s;
+}
+
+input:focus {
+    outline: none;
+    transition: ease .2s;
+}
+
+input::placeholder {
+    color: rgb(175, 153, 25);
+}
+
+.input-container {
+    display: flex;
+    width: fit-content;
+    margin: 0 auto 25px;
+}
+
+.input-container:nth-child(1), .input-container:nth-child(2) {
+    margin-bottom: 0;
+}
+
+.profile-logo {
+    height: 42px;
+    width: 40px;
+    border-radius: 20px 0 0 20px;
+    background-color: white;
+}
+
+.fa-user, .fa-lock {
+    margin: 13px 16px;
+}
+
+.error-message {
+    color: rgb(138, 10, 10);
+    margin: 12px 0;
+    font-size: 14px;
+}
+
+#login-email-error {
+    margin: 12px 25px;
+}
+
+#login-password-error {
+    margin: 0 25px;
+}
+ 
+button {
+    height: 40px;
+    width: 297px;
+    border-radius: 20px;
+    border: none;
+    margin: 25px 24px 25px;
+    cursor: pointer;
+    background-color: rgb(64, 64, 235);
+    color: white;
+    font-size: 17px;
+    transition: ease .2s;
+}
+
+button:hover {
+    background-color: rgb(116, 116, 234);
+    transition: ease .2s;
+}
+
+/* loading animation */
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333333;
+    transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: #009578;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+    from {
+      transform: rotate(0turn);
+    }
+    to {
+      transform: rotate(1turn);
+    }
+}

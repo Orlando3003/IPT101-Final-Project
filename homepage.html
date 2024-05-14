@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homepage.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/9db1bfe32c.js" crossorigin="anonymous"></script>
+    <title>Home | Shoes to Go</title>
+</head>
+<body>
+    
+    <header>
+
+        <div class="logo-container">
+
+            <img src="img/logo.jpg">
+            <h2> SHOES TO GO </h2>
+
+        </div>
+        
+        <div class="nav-links">
+
+            <a href="homepage.html"><i class="fa-solid fa-house"></i>Home</a>
+            <a href="developers.html"><i class="fa-solid fa-user"></i>Developers</a>
+            <a onclick="logout()"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log Out</a>
+
+        </div>
+
+    </header>
+
+    <button id="cart-icon"><i class='fa-solid fa-cart-shopping'></i></button>
+
+    <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+
+        <!-- CONTENT  -->
+        <div class="cart-content">
+
+
+        </div>
+
+        <!-- TOTAL   -->
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">₱0</div>
+        </div>
+        <!-- BUY BUTTON  -->
+        <button type="button" class="btn-buy">Buy Now</button>
+        <!-- CART CLOSE  -->
+        <i class='bx bx-x' id="cart-close"></i>
+    </div>
+
+    <section class="shop container">
+        <h2 class="section-title">All Shoes</h2>
+
+        <!-- CONTENT  -->
+        <div class="shop-content">
+            <!-- BOX 1 -->
+            <div class="product-box">
+                <img src="img/shoes/Tatum-2-Vortex-PF.jpg" alt="" class="product-img">
+                <h2 class="product-title">Tatum 2 Vortex PF</h2>
+                <span class="product-price">₱7095</span>
+                <i class='bx bx-shopping-bag add-cart' id="add-cart"></i>
+            </div>
+            <!-- BOX 2 -->
+            <div class="product-box">
+                <img src="img/shoes/nike-precision-6.jpg" alt="" class="product-img">
+                <h2 class="product-title">Nike Precision 6</h2>
+                <span class="product-price">₱3495</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 3 -->
+            <div class="product-box">
+                <img src="img/shoes/Luka-2-PF.png" alt="" class="product-img">
+                <h2 class="product-title">Luka 2 PF</h2>
+                <span class="product-price">₱7395</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 4 -->
+            <div class="product-box">
+                <img src="img/shoes/Nike Precision 7.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Precision 7</h2>
+                <span class="product-price">₱3695</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 5 -->
+            <div class="product-box">
+                <img src="img/shoes/LeBron XXI EP.png" alt="" class="product-img">
+                <h2 class="product-title">Lebron XXI EP</h2>
+                <span class="product-price">₱10895</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 6 -->
+            <div class="product-box">
+                <img src="img/shoes/air-force-1-07.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Force 1 '07</h2>
+                <span class="product-price">₱5495</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 7 -->
+            <div class="product-box">
+                <img src="img/shoes/Nike G.T. Cut 3 EP.jpg" alt="" class="product-img">
+                <h2 class="product-title">Nike G.T. Cut 3 EP</h2>
+                <span class="product-price">₱10295</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 8 -->
+            <div class="product-box">
+                <img src="img/shoes/zion-3-pf-basketball-shoes-vTjpz4.png" alt="" class="product-img">
+                <h2 class="product-title">Zion 3 PF</h2>
+                <span class="product-price">₱4739</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+
+        <p>© All rights reserved Toothless AF </p>
+
+    </footer>
+
+    <div class="loader"></div>
+
+    <script src="loadingAnimation.js"></script>
+    <script>
+        function logout() {
+            var confirmLogout = confirm('Are you sure you want to log out?');
+
+            if (confirmLogout) {
+
+                // Redirect the user to the logout page or login page
+                window.location.href = 'login-page.html';
+
+            }
+        }
+    </script>
+    <script src="add-to-cart-buy.js"></script>
+
+</body>
+</html>
